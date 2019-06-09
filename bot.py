@@ -5,7 +5,7 @@ app = Client('835349563:AAEju8ekgXVB0JvpgyKyXN_YgCCHHyTBNH0',605563,"7f2c2d12880
 
 
 
-u = 'id'
+u = '-1001439909102'
 s = '-1001378725482'
 
 

@@ -1,11 +1,11 @@
-﻿from pyrogram import Client, Filters
+from pyrogram import Client, Filters
 
 
-app = Client('890398475:AAFKe-e5H2owXvzoB-AlIpy3ELE-0f7OoNs',605563,"7f2c2d12880400b88764b9b304e14e0b")
+app = Client('835349563:AAEju8ekgXVB0JvpgyKyXN_YgCCHHyTBNH0',605563,"7f2c2d12880400b88764b9b304e14e0b")
 
 
 
-u = '-1001277886997'
+u = 'id'
 s = '-1001378725482'
 
 

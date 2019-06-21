@@ -30,7 +30,7 @@ def forawrd(client, message):
   id = str(message.message_id)
   if id in x:
    client.edit_message_text(int(u),int(x[x.index(id)+1]), "**" + message.text + "**" )
-@app.on_message(Filters.chat(int(s)) & Filters.command("set"))
+@app.on_message(Filters.command("set"))
 def forawrd(client, message):
  if message.from_user.id == 491634139 :
   file = open("sue.txt" , "w")

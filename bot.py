@@ -7,7 +7,7 @@ s = '-1001274887387'
 
 @app.on_message(Filters.chat(int(s)) & Filters.text & ~ Filters.edited)
 def forawrd(client, message):
- fil = open("sure.txt" , "r")
+ fil = open("sue.txt" , "r")
  c = fil.readlines()
  fil.close()
  for e in c:
@@ -22,6 +22,10 @@ def forawrd(client, message):
 
 @app.on_message(Filters.chat(int(s)) & Filters.text & Filters.edited)
 def forawrd(client, message):
+ fil = open("sue.txt" , "r")
+ c = fil.readlines()
+ fil.close()
+ for e in c:
  file = open("sure.txt" , "r")
  lines = file.readlines()
  file.close()

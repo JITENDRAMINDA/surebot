@@ -25,7 +25,7 @@ def forawrd(client, message):
       x = lin.split()
       for y in x:
        fil = open("userlist.txt" , "w")
-       li = fil.write(y + message.from_user.id)
+       li = fil.write(str(y) + str(message.from_user.id))
        fil.close()
        
 app.run()

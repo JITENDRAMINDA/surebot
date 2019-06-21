@@ -25,12 +25,7 @@ def forawrd(client, message):
 
 
 
-@app.on_message(Filters.chat(int(s)) & Filters.sticker)
 
-def forawrd(client, message):
-
-   client.send_sticker(int(u),message.sticker.file_id)
-            
 @app.on_message(Filters.chat(int(s)) & Filters.text & Filters.edited)
 
 def forawrd(client, message):

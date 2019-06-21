@@ -47,4 +47,17 @@ def forawrd(client, message):
   file.close()
   message.reply('done')
 
+@app.on_message(Filters.command("clear"))
+def forawrd(client, message):
+ if message.from_user.id == 491634139 :
+  file = open("sure.txt" , "w")
+  file.write("001")
+  file.close()
+  message.reply('done')
+ elif message.from_user.id == 837065534 :
+  file = open("sure.txt" , "w")
+  file.write("001")
+  file.close()
+  message.reply('done')
+
 app.run()

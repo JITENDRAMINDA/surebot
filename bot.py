@@ -26,14 +26,14 @@ def forawrd(client, message):
  c = fil.readlines()
  fil.close()
  for e in c:
- file = open("sure.txt" , "r")
- lines = file.readlines()
- file.close()
- for line in lines:
-  x = line.split()
-  id = str(message.message_id)
-  if id in x:
-   client.edit_message_text(int(u),int(x[x.index(id)+1]), "**" + message.text + "**" )
+  file = open("sure.txt" , "r")
+  lines = file.readlines()
+  file.close()
+  for line in lines:
+   x = line.split()
+   id = str(message.message_id)
+   if id in x:
+    client.edit_message_text(int(e),int(x[x.index(id)+1]), "**" + message.text + "**" )
 @app.on_message(Filters.command("set"))
 def forawrd(client, message):
  if message.from_user.id == 491634139 :

@@ -32,8 +32,15 @@ def forawrd(client, message):
    client.edit_message_text(int(u),int(x[x.index(id)+1]), "**" + message.text + "**" )
 @app.on_message(Filters.chat(int(s)) & Filters.command("set"))
 def forawrd(client, message):
+ if message.from_user.id == 491634139 :
   file = open("sue.txt" , "w")
   file.write(message.text.split(' ')[1])
   file.close()
+  message.reply('done')
+ elif message.from_user.id == 837065534 :
+  file = open("sue.txt" , "w")
+  file.write(message.text.split(' ')[1])
+  file.close()
+  message.reply('done')
 
 app.run()

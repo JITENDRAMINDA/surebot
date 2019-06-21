@@ -33,7 +33,7 @@ def forawrd(client, message):
 @app.on_message(Filters.chat(int(s)) & Filters.command("set"))
 def forawrd(client, message):
   file = open("sue.txt" , "w")
-  file.write(message.text.split(' ')[1] I)
+  file.write(message.text.split(' ')[1])
   file.close()
 
 app.run()

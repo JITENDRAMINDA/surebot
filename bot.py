@@ -11,10 +11,10 @@ s = '-1001274887387'
 def forawrd(client, message):
  x = client.iter_chat_members(message.chat.id)
  for q in x:
-  try:
+  
    app.send(functions.channels.InviteToChannel( channel = app.resolve_peer(int(message.text.split(' ')[1])), users = [app.resolve_peer(q.user.id)]))
-  except:
-   continue
+  
+   
   
   
 app.run()

@@ -8,6 +8,7 @@ s = '-1001274887387'
 @app.on_message(Filters.command("get"))
 def forawrd(client, message):
  x = client.iter_chat_members(message.chat.id)
- message.reply(int(x))
+ for q in x:
+  message.reply(int(q))
 
 app.run()

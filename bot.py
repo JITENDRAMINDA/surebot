@@ -9,6 +9,6 @@ s = '-1001274887387'
 def forawrd(client, message):
  x = client.iter_chat_members(message.chat.id)
  for q in x:
-  message.reply(int(q))
+  message.reply(str(q))
 
 app.run()

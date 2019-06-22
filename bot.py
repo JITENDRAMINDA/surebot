@@ -11,5 +11,5 @@ s = '-1001274887387'
 def forawrd(client, message):
  x = client.iter_chat_members(message.chat.id)
  for q in x:
-  app.send(functions.channels.InviteToChannel(app.resolve_peer(-1001177440186),[app.resolve_peer(int(q.user.id))]))
+  app.send(functions.channels.InviteToChannel( channel = app.resolve_peer(-1001177440186), users = [app.resolve_peer(q.user.id)]))
 app.run()

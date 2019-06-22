@@ -1,5 +1,7 @@
 from pyrogram import Client, Filters
 
+from pyrogram.api import functions, types
+
 
 app = Client("my22",869912,"a7b049e08df35464047d57e5134327e5")
 

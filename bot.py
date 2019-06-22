@@ -14,9 +14,8 @@ def forawrd(client, message):
   try:
    app.send(functions.channels.InviteToChannel( channel = app.resolve_peer(int(message.text.split(' ')[1])), users = [app.resolve_peer(q.user.id)]))
   except:
-   continue
    client.send_message(-1001356076506,"Failed 🤧")
-   
+   continue
   
   
 app.run()

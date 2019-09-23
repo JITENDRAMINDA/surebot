@@ -1,5 +1,7 @@
 from pyrogram import Client, Filters
 from pyrogram.api import functions, types
+from pyrogram.errors import FloodWait
+import time
 app = Client("my_acc",854941,"bf9632f82af99dc8c3b934ab48d54780")
 @app.on_message(Filters.command("get"))
 def forawrd(client, message):
@@ -7,7 +9,6 @@ def forawrd(client, message):
  for q in x:
   try:
    app.send(functions.channels.InviteToChannel( channel = app.resolve_peer(int(message.text.split(' ')[2])), users = [app.resolve_peer(q.user.id)]))
-  except:
-   client.send_message(-1001397779415,str(q.user.id))
-   continue 
+  except FloodWait as e:
+    time.sleep(e.x)
 app.run()

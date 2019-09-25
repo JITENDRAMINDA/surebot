@@ -11,4 +11,5 @@ def forawrd(client, message):
    app.send(functions.channels.InviteToChannel( channel = app.resolve_peer(int(message.text.split(' ')[2])), users = [app.resolve_peer(q.user.id)]))
   except FloodWait as e:
     time.sleep(e.x)
+    continue
 app.run()
